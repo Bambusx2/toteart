@@ -108,6 +108,12 @@
   object-fit: contain;
   border-radius: 4px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.03);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.lightbox__image:not([src]) {
+  opacity: 0;
 }
 
 .lightbox__info {

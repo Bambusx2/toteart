@@ -21,7 +21,7 @@
 
     <div class="lightbox__content">
       <img
-        [src]="artwork!.imageUrl"
+        [src]="artwork!.imageSrcset?.large || artwork!.imageUrl"
         [alt]="artwork!.imageAlt"
         class="lightbox__image"
         decoding="async"

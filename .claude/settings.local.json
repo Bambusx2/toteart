@@ -11,7 +11,8 @@
       "WebFetch(domain:www.sitebuilderreport.com)",
       "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\artworks\\\\*.jpg\")",
       "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\about\\\\*.jpg\")",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(node scripts/update-artworks-srcset.js:*)"
     ]
   }
 }

@@ -17,7 +17,13 @@
         >
           <div class="masonry-item__image-wrapper">
             <img
-              [src]="artwork.imageUrl"
+              [src]="artwork.imageSrcset?.medium || artwork.imageUrl"
+              [srcset]="artwork.imageSrcset ?
+                artwork.imageSrcset.thumb + ' 400w, ' +
+                artwork.imageSrcset.medium + ' 800w, ' +
+                artwork.imageSrcset.large + ' 1200w' :
+                ''"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               [alt]="artwork.imageAlt"
               class="masonry-item__image"
               [loading]="i < 6 ? 'eager' : 'lazy'"

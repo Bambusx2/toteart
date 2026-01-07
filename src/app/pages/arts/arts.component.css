@@ -112,6 +112,29 @@
   height: auto;
   display: block;
   transition: transform var(--transition-slow);
+  background: var(--color-background);
+}
+
+/* Progressive image loading effect */
+.masonry-item__image:not([src]) {
+  opacity: 0;
+}
+
+.masonry-item__image[loading="lazy"]:not([src]) {
+  background: linear-gradient(
+    110deg,
+    var(--color-background) 8%,
+    rgba(255, 255, 255, 0.6) 18%,
+    var(--color-background) 33%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -200% 0;
+  }
 }
 
 /* Reduced motion support */
@@ -126,6 +149,11 @@
 
   .masonry-item {
     animation: none;
+  }
+
+  .masonry-item__image[loading="lazy"]:not([src]) {
+    animation: none;
+    background: var(--color-background);
   }
 }
 
