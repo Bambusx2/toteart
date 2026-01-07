@@ -1,0 +1,122 @@
+.about-page {
+  padding: var(--space-xxl) 0 var(--space-xxl);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-portrait {
+  width: 100%;
+}
+
+.about-portrait__image {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all var(--transition-slow);
+  display: block;
+}
+
+.about-portrait__image:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+.about-text {
+  width: 100%;
+}
+
+.about-text__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.about-text__body {
+  margin-bottom: var(--space-xl);
+}
+
+.about-text__body p {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-md);
+  max-width: 65ch;
+}
+
+.about-text__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet and up - Professional grid: Image 38% | Text 62% */
+@media (min-width: 48em) {
+  .about-content {
+    grid-template-columns: 38% 1fr;
+    gap: clamp(3rem, 6vw, 5rem);
+    align-items: start;
+  }
+}
+
+/* Desktop - Larger image 40% */
+@media (min-width: 64em) {
+  .about-content {
+    grid-template-columns: 40% 1fr;
+    gap: clamp(4rem, 7vw, 6rem);
+  }
+
+  .about-text__body p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+}
+
+/* Large screens - Even bigger 42% */
+@media (min-width: 90em) {
+  .about-content {
+    grid-template-columns: 42% 1fr;
+  }
+}
+
+/* Mobile refinements */
+@media (max-width: 48em) {
+  .about-page {
+    padding: var(--space-xl) 0;
+  }
+
+  .about-content {
+    gap: var(--space-lg);
+  }
+
+  .about-portrait {
+    max-width: 100%;
+  }
+
+  .about-text__title {
+    font-size: 2rem;
+    margin-bottom: var(--space-sm);
+  }
+
+  .about-contact__title {
+    font-size: 1.5rem;
+  }
+
+  .about-text__body p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}

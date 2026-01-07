@@ -1,0 +1,38 @@
+SOCIAL MEDIA SHARE IMAGE (OG Image) - REQUIRED
+
+Create an image with the following specifications:
+
+FILE SPECIFICATIONS:
+- Filename: og-image.jpg
+- Dimensions: 1200 × 630 pixels (exact)
+- Format: JPEG or PNG
+- File size: Under 300KB for optimal loading
+- Location: /src/assets/images/og-image.jpg
+
+DESIGN RECOMMENDATIONS:
+1. Feature one of Metodi's best artworks as the background
+2. Overlay text in the design system colors:
+   - Background: #f6f6f4 (semi-transparent overlay)
+   - Text: #1c1c1c
+   - Accent: #2f3a45
+
+SUGGESTED TEXT OVERLAY:
+- Main headline: "Metodi Ivanov (Tote)"
+- Subheading: "Contemporary Artist"
+- Optional: "Original Acrylic Paintings"
+
+DESIGN TIPS:
+- Keep text readable at small sizes (mobile preview)
+- Maintain the calm, gallery-like aesthetic
+- Avoid clutter - let the artwork breathe
+- Ensure text has enough contrast with background
+- Use elegant serif font for the name
+- Test how it looks on Facebook, Twitter, and LinkedIn previews
+
+TESTING TOOLS:
+- Facebook Sharing Debugger: https://developers.facebook.com/tools/debug/
+- Twitter Card Validator: https://cards-dev.twitter.com/validator
+- LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+
+Once created, this image will be used when someone shares your website on social media.
+It's the first impression potential visitors will see!

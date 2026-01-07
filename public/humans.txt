@@ -1,0 +1,46 @@
+/* TEAM */
+Artist & Creator: Metodi Ivanov (Tote)
+Contact: toteiv@yahoo.com
+Location: North Macedonia
+Social: facebook.com/metodi.ivanov.9
+Social: instagram.com/metodi.ivanov.9
+
+Web Development: ResolVR
+Site: http://resolvr.dev
+
+/* SITE */
+Last update: 2025/01/07
+Language: English / Macedonian
+Doctype: HTML5
+Standards: WCAG 2.2, Schema.org
+Components: Angular 21, TypeScript
+Styling: Handcrafted CSS (No frameworks)
+Fonts: Elegant serif & clean sans-serif
+Images: WebP format
+Philosophy: Art first, frameworks second
+
+/* THANKS */
+Built with care for artistic expression
+Designed to let the artwork breathe
+Every detail considered
+
+                 __.,,------.._
+              ,'"   _      _   "`.
+             /.__, ._  -=- _ "`    Y
+            (.____.-.`      ""`   j
+             VvvvvvV`.Y,.    _.,-'       ,     ,
+                Y    ||,   '"\         ,/    ,/
+                |   ,' |   / |`.     ,/    ,/
+                | ,'   |  /  | |   ,/    ,/
+                '     ,'  .  | |  /    ,/
+                 `   /    |  `  -/    /
+                  `.  `.  |      /  ,'
+                    `.  `-|____,.','
+                      `.   ---  ,'
+                        `-.___|,'
+
+/* ARTWORKS */
+Portfolio features 38+ original acrylic paintings
+Created 2024-2025
+Subjects: Nature, Heritage, Emotion, Animals
+Style: Contemporary with timeless appeal

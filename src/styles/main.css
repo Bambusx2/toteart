@@ -1,0 +1,30 @@
+/* Import design system */
+@import './_variables.css';
+@import './_typography.css';
+@import './_layout.css';
+@import './_animations.css';
+
+/* Museum-quality selection and focus */
+::selection {
+  background: rgba(23, 23, 23, 0.15);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(23, 23, 23, 0.15);
+  color: inherit;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Better focus for buttons and links */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}

@@ -1,0 +1,31 @@
+<header class="header">
+  <div class="header__container">
+    <h1 class="header__title">
+      <a routerLink="/arts" class="header__logo">
+        <img src="assets/images/logo-tote.webp" alt="Metodi Ivanov (Tote)" class="header__logo-image" />
+      </a>
+    </h1>
+
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        @for (item of navItems; track item.path) {
+          <li class="nav-list__item">
+            <a
+              [routerLink]="item.path"
+              routerLinkActive="nav-list__link--active"
+              class="nav-list__link">
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+
+      <button
+        class="language-toggle"
+        (click)="toggleLanguage()"
+        [attr.aria-label]="'Switch to ' + (languageService.currentLanguage() === 'en' ? 'Macedonian' : 'English')">
+        {{ languageService.currentLanguage() === 'en' ? 'MK' : 'EN' }}
+      </button>
+    </nav>
+  </div>
+</header>

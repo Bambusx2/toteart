@@ -1,0 +1,28 @@
+{
+  "name": "Metodi Ivanov (Tote) - Contemporary Artist",
+  "short_name": "Metodi Ivanov",
+  "description": "Contemporary artist portfolio showcasing original acrylic paintings",
+  "theme_color": "#fafaf9",
+  "background_color": "#fafaf9",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
