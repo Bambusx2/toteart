@@ -92,7 +92,7 @@ Navigate to `http://localhost:4200/`. The application will automatically reload 
 npm run build
 ```
 
-Build artifacts will be stored in the `dist/` directory.
+Build artifacts will be stored in the `dist/tato-blog/browser/` directory.
 
 ### Production Build
 
@@ -101,6 +101,30 @@ npm run build
 ```
 
 The default configuration is production with optimization enabled.
+
+## Deployment
+
+### Deploy to Netlify (Recommended)
+
+This project is configured for seamless Netlify deployment:
+
+1. Push code to GitHub
+2. Connect repository to Netlify
+3. Netlify auto-detects settings from `netlify.toml`
+4. Deploy!
+
+**Configuration included:**
+- ✓ Build command: `npm run build`
+- ✓ Publish directory: `dist/tato-blog/browser`
+- ✓ SPA redirects for Angular routing
+- ✓ Security headers
+- ✓ Asset caching strategy
+
+See `NETLIFY-DEPLOY.md` for complete deployment guide.
+
+**Quick Deploy:**
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/yourusername/toteart)
 
 ## Image Guidelines
 
