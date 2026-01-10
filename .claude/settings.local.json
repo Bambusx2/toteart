@@ -12,7 +12,10 @@
       "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\artworks\\\\*.jpg\")",
       "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\about\\\\*.jpg\")",
       "Bash(git add:*)",
-      "Bash(node scripts/update-artworks-srcset.js:*)"
+      "Bash(node scripts/update-artworks-srcset.js:*)",
+      "Bash(ls:*)",
+      "Bash(node scripts/check-image-info.js:*)",
+      "Bash(node scripts/optimize-single-image.js:*)"
     ]
   }
 }
