@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, HostListener, inject } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, HostListener, inject, computed } from '@angular/core';
 import { Artwork } from '../../models/artwork.model';
 import { LanguageService } from '../../../core/services/language.service';
 
@@ -11,7 +11,8 @@ import { LanguageService } from '../../../core/services/language.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LightboxComponent {
-  languageService = inject(LanguageService);
+  private languageService = inject(LanguageService);
+  private isEnglish = computed(() => this.languageService.currentLanguage() === 'en');
 
   @Input() artwork: Artwork | null = null;
   @Input() isOpen = false;
@@ -21,7 +22,7 @@ export class LightboxComponent {
 
   @HostListener('document:keydown.escape')
   onEscapeKey(): void {
-    this.onClose();
+    this.close.emit();
   }
 
   @HostListener('document:keydown.arrowRight')
@@ -38,27 +39,20 @@ export class LightboxComponent {
     }
   }
 
-  onClose(): void {
-    this.close.emit();
-  }
-
   onBackdropClick(event: MouseEvent): void {
-    if ((event.target as HTMLElement).classList.contains('lightbox')) {
-      this.onClose();
+    const target = event.target as HTMLElement;
+    if (target.classList.contains('lightbox')) {
+      this.close.emit();
     }
   }
 
   getTitle(): string {
     if (!this.artwork) return '';
-    return this.languageService.currentLanguage() === 'en'
-      ? this.artwork.titleEn
-      : this.artwork.titleMk;
+    return this.isEnglish() ? this.artwork.titleEn : this.artwork.titleMk;
   }
 
   getMedium(): string {
     if (!this.artwork) return '';
-    return this.languageService.currentLanguage() === 'en'
-      ? this.artwork.mediumEn
-      : this.artwork.mediumMk;
+    return this.isEnglish() ? this.artwork.mediumEn : this.artwork.mediumMk;
   }
 }

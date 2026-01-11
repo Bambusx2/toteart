@@ -23,8 +23,8 @@
       <button
         class="language-toggle"
         (click)="toggleLanguage()"
-        [attr.aria-label]="'Switch to ' + (languageService.currentLanguage() === 'en' ? 'Macedonian' : 'English')">
-        {{ languageService.currentLanguage() === 'en' ? 'MK' : 'EN' }}
+        [attr.aria-label]="toggleAriaLabel">
+        {{ toggleButtonLabel }}
       </button>
     </nav>
   </div>

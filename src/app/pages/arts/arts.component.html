@@ -32,10 +32,8 @@
             />
             <div class="masonry-item__overlay">
               <div class="masonry-item__content">
-                <h2 class="masonry-item__title">{{ languageService.currentLanguage() === 'en' ? artwork.titleEn : artwork.titleMk }}</h2>
-                <p class="masonry-item__meta">
-                  {{ artwork.year }} · {{ languageService.currentLanguage() === 'en' ? artwork.mediumEn : artwork.mediumMk }}
-                </p>
+                <h2 class="masonry-item__title">{{ getTitle(artwork) }}</h2>
+                <p class="masonry-item__meta">{{ artwork.year }} · {{ getMedium(artwork) }}</p>
                 <div class="masonry-item__action">
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8"></circle>

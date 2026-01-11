@@ -1,6 +1,6 @@
 @if (isOpen && artwork) {
   <div class="lightbox" (click)="onBackdropClick($event)">
-    <button class="lightbox__close" (click)="onClose()" aria-label="Close lightbox">
+    <button class="lightbox__close" (click)="close.emit()" aria-label="Close lightbox">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -21,8 +21,8 @@
 
     <div class="lightbox__content">
       <img
-        [src]="artwork!.imageSrcset?.large || artwork!.imageUrl"
-        [alt]="artwork!.imageAlt"
+        [src]="artwork.imageSrcset?.large || artwork.imageUrl"
+        [alt]="artwork.imageAlt"
         class="lightbox__image"
         decoding="async"
         fetchpriority="high"
@@ -30,9 +30,7 @@
 
       <div class="lightbox__info">
         <h2 class="lightbox__title">{{ getTitle() }}</h2>
-        <p class="lightbox__meta">
-          {{ artwork!.year }} · {{ getMedium() }} · {{ artwork!.dimensions }}
-        </p>
+        <p class="lightbox__meta">{{ artwork.year }} · {{ getMedium() }} · {{ artwork.dimensions }}</p>
       </div>
     </div>
   </div>

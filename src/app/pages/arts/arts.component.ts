@@ -17,15 +17,22 @@ export class ArtsComponent {
   isLightboxOpen = signal(false);
   selectedIndex = signal(0);
 
-  private getImageSrcset(originalPath: string) {
+  getTitle(artwork: Artwork): string {
+    return this.languageService.currentLanguage() === 'en' ? artwork.titleEn : artwork.titleMk;
+  }
+
+  getMedium(artwork: Artwork): string {
+    return this.languageService.currentLanguage() === 'en' ? artwork.mediumEn : artwork.mediumMk;
+  }
+
+  private getImageSrcset(originalPath: string): { thumb: string; medium: string; large: string } {
     const basePath = originalPath.replace('assets/images/artworks/', 'assets/images/artworks-optimized/');
-    const extension = '.webp';
-    const basePathWithoutExt = basePath.replace(extension, '');
+    const basePathWithoutExt = basePath.replace('.webp', '');
 
     return {
-      thumb: `${basePathWithoutExt}-thumb${extension}`,
-      medium: `${basePathWithoutExt}-medium${extension}`,
-      large: `${basePathWithoutExt}-large${extension}`
+      thumb: `${basePathWithoutExt}-thumb.webp`,
+      medium: `${basePathWithoutExt}-medium.webp`,
+      large: `${basePathWithoutExt}-large.webp`
     };
   }
 
