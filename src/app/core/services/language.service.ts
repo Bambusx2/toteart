@@ -43,7 +43,7 @@ export class LanguageService {
     en: {
       nav: {
         works: 'Works',
-        about: 'About'
+        about: 'About the Artist'
       },
       arts: {
         title: 'Works',
@@ -51,7 +51,7 @@ export class LanguageService {
         viewFullSize: 'View Full Size'
       },
       about: {
-        title: 'About',
+        title: 'About the Artist',
         bio1: 'Metodi Ivanov was born on January 23, 1960. His love for art awakened in early childhood—a quiet calling that would follow him throughout his life, waiting patiently for its time to fully emerge.',
         bio2: 'He completed his high school and university education in Štip, where the foundations of his worldview were shaped. His entire professional life was devoted to AD Makpetrol, where he worked with dedication and commitment.',
         bio3: 'In 2024, after retiring, Metodi received an extraordinary gift from his family for his birthday and retirement: canvas, a complete set of acrylic paints, easel, brushes, and complete painting equipment. He experienced that moment as a reminder and encouragement—it was time to return to where he belongs, in front of the canvas.',
@@ -73,7 +73,7 @@ export class LanguageService {
     mk: {
       nav: {
         works: 'Дела',
-        about: 'За мене'
+        about: 'За уметникот'
       },
       arts: {
         title: 'Дела',
@@ -81,7 +81,7 @@ export class LanguageService {
         viewFullSize: 'Погледни цела'
       },
       about: {
-        title: 'За мене',
+        title: 'За уметникот',
         bio1: 'Методи Иванов е роден на 23 јануари 1960 година. Неговата љубов кон уметноста се разбудила уште во раното детство—тивок повик што го следел низ целиот живот, трпеливо чекајќи го своето време да изрони во полн сјај.',
         bio2: 'Тој ги завршува средното и високото образование во Штип, каде се обликувале темелите на неговиот поглед на светот. Целиот свој професионален живот го посветил на АД Макпетрол, каде работел со посветеност и одговорност.',
         bio3: 'Во 2024 година, по пензионирањето, Методи од своето семејство добива несекојдневен подарок за роденден и пензија: платно, комплет акрилни бои, штафелај, четки и целосна сликарска опрема. Тој миг го доживува како потсетник и поттик—време е повторно да се врати таму каде што припаѓа, пред платното.',

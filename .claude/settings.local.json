@@ -15,7 +15,8 @@
       "Bash(node scripts/update-artworks-srcset.js:*)",
       "Bash(ls:*)",
       "Bash(node scripts/check-image-info.js:*)",
-      "Bash(node scripts/optimize-single-image.js:*)"
+      "Bash(node scripts/optimize-single-image.js:*)",
+      "WebFetch(domain:colorlib.com)"
     ]
   }
 }
