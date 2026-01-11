@@ -37,7 +37,7 @@ export interface Translations {
   providedIn: 'root'
 })
 export class LanguageService {
-  currentLanguage = signal<Language>('en');
+  currentLanguage = signal<Language>('mk');
 
   private translations: Record<Language, Translations> = {
     en: {
