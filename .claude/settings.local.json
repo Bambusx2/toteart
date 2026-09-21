@@ -1,23 +1,25 @@
 {
   "permissions": {
     "allow": [
-      "Bash(dir:*)",
-      "Bash(test:*)",
-      "Bash(cat:*)",
-      "Bash(ng new:*)",
-      "Bash(npm:*)",
-      "WebFetch(domain:designlab.com)",
-      "WebSearch",
-      "WebFetch(domain:www.sitebuilderreport.com)",
-      "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\artworks\\\\*.jpg\")",
-      "Bash(del \"C:\\\\Users\\\\Ratko\\\\Documents\\\\GitHub\\\\toteart\\\\src\\\\assets\\\\images\\\\about\\\\*.jpg\")",
-      "Bash(git add:*)",
-      "Bash(node scripts/update-artworks-srcset.js:*)",
-      "Bash(ls:*)",
-      "Bash(node scripts/check-image-info.js:*)",
-      "Bash(node scripts/optimize-single-image.js:*)",
-      "WebFetch(domain:colorlib.com)",
-      "Bash(ren:*)"
+      "PowerShell(git config *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(if \\(Test-Path D:\\\\VULNERABILITIES\\) { Push-Location D:\\\\VULNERABILITIES; \"In D:\\\\VULNERABILITIES -> \" + \\(git config user.name\\) + \" / \" + \\(git config user.email\\); Pop-Location } else { \"D:\\\\VULNERABILITIES not present on this machine\" })",
+      "PowerShell(Compare-Object *)",
+      "PowerShell(Push-Location \"C:\\\\Users\\\\BlaCkY\\\\Desktop\\\\OnePoint\\\\OnePointDoc\\\\toteart\"; \"remote: \" + \\(git remote -v | Out-String\\); \"branch: \" + \\(git rev-parse --abbrev-ref HEAD\\); \"identity: \" + \\(git config user.name\\) + \" / \" + \\(git config user.email\\); \"last commit:\"; git log -1 --format=\"%h %an <%ae> %ad %s\"; Pop-Location)",
+      "Bash(npm --version)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node add-artworks.js)",
+      "Bash(where node *)",
+      "Bash(nvm list *)",
+      "Bash(node -e \"console.log\\('sharp ok', require\\('sharp'\\).versions.vips\\)\")",
+      "Bash(cd *)",
+      "Bash(awk '{print $1}')",
+      "Bash(git checkout *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\BlaCkY\\\\Desktop\\\\OnePoint\" -Directory -Recurse -Depth 3 -Force -ErrorAction SilentlyContinue | Where-Object { $_.Name -eq '.git' } | ForEach-Object { $_.Parent.FullName })"
     ]
   }
 }
