@@ -4,22 +4,22 @@
 
   <!-- Homepage / Arts Gallery -->
   <url>
-    <loc>https://yourwebsite.com/arts</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://toteiv.art/arts</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/arts"/>
-    <xhtml:link rel="alternate" hreflang="mk" href="https://yourwebsite.com/arts"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://toteiv.art/arts"/>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://toteiv.art/arts"/>
   </url>
 
   <!-- About Page -->
   <url>
-    <loc>https://yourwebsite.com/about</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://toteiv.art/about</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://yourwebsite.com/about"/>
-    <xhtml:link rel="alternate" hreflang="mk" href="https://yourwebsite.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://toteiv.art/about"/>
+    <xhtml:link rel="alternate" hreflang="mk" href="https://toteiv.art/about"/>
   </url>
 
 </urlset>
