@@ -9,7 +9,7 @@ Web Development: ResolVR
 Site: http://resolvr.dev
 
 /* SITE */
-Last update: 2026/11/19
+Last update: 2026/11/25
 Language: English / Macedonian
 Doctype: HTML5
 Standards: WCAG 2.2, Schema.org
@@ -40,7 +40,7 @@ Every detail considered
                         `-.___|,'
 
 /* ARTWORKS */
-Portfolio features 59 original acrylic paintings
+Portfolio features 60 original acrylic paintings
 Created 1983-2026
 Subjects: Nature, Heritage, Emotion, Animals
 Style: Contemporary with timeless appeal

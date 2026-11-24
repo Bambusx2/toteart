@@ -5,7 +5,7 @@
   <!-- Homepage / Arts Gallery -->
   <url>
     <loc>https://toteiv.art/arts</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://toteiv.art/arts"/>
@@ -15,7 +15,7 @@
   <!-- About Page -->
   <url>
     <loc>https://toteiv.art/about</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://toteiv.art/about"/>
